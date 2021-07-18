@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+nav {
+  height: 60px;
+  background-image: url(../../../images/nav/navWood.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  ul.navigation-contener {
+    width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+
+    li.navigation-list {
+      font-size: 18px;
+      color: white;
+      font-family: 'Noto Sans', sans-serif;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+main {
+  padding: 10px 0 200px;
+  min-height: calc(100vh - 180px);
+
+  .home-page {
+    width: 1080px;
+    margin: 0 auto;
+
+    h1 {
+      text-align: center;
+    }
+
+    .main-images-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .mainImage {
+        height: 500px;
+        padding: 20px;
+      }
+
+      .rightImage {
+        padding: 20px;
+        height: 500px;
+      }
+    }
+
+    .bottom-image-container {
+
+      .bottomImage {
+
+        padding: 20px;
+      }
+    }
+  }
+
+}

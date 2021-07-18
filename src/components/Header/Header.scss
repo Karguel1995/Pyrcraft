@@ -1,0 +1,29 @@
+header {
+  height: 120px;
+
+  .header-wrapper {
+    margin: 0 auto;
+    width: 1080px;
+    height: 100%;
+    display: flex;
+
+    .logo {
+      width: 120px;
+      background-position: center;
+      background-size: 120px;
+      background-image: url('./logoPyrcrafts.png');
+    }
+
+    .header-contact {
+      flex-grow: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .header-contact-info {
+        margin: 20px;
+        font-size: 18px;
+      }
+    }
+  }
+}

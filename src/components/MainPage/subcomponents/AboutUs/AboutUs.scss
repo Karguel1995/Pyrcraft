@@ -1,0 +1,76 @@
+.about-us-page {
+  margin-top: 20px;
+
+  .advantages {
+    background-color: #F2DA5E;
+    min-height: 300px;
+
+    h2 {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .advantages-list {
+      width: 1080px;
+      height: 200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      div {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      img {
+        margin: 10px auto;
+      }
+    }
+  }
+
+  .about-us-container {
+    width: 1080px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      font-size: 26px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .about-us-container-left {
+      width: 68%;
+      padding: 10px;
+
+      p {
+        font-size: 18px;
+        line-height: 32px;
+      }
+    }
+
+    .about-us-container-right {
+      padding: 10px;
+      width: 28%;
+
+      ul {
+        list-style: none;
+      }
+
+      li {
+        line-height: 36px;
+        font-size: 20px;
+      }
+    }
+
+  }
+}

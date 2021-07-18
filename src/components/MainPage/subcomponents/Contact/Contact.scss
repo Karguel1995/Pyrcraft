@@ -1,0 +1,40 @@
+.contact-page {
+  width: 1080px;
+  margin: 50px auto;
+
+  h2 {
+    text-align: center;
+  }
+
+  .contact-container {
+    margin-top: 30px;
+    display: flex;
+
+    .contact-left {
+      width: 50%;
+      flex-grow: 1;
+      text-align: center;
+
+      .contact-details {
+        padding: 20px 0;
+      }
+    }
+
+    .contact-right {
+      width: 50%;
+      flex-grow: 1;
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+    }
+
+  }
+}
