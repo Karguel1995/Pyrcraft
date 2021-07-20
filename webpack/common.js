@@ -1,8 +1,6 @@
 const path = require('path').resolve;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const sourcePath = path(__dirname, '..', 'src');
-
 module.exports = {
     entry: {
         index: path(__dirname, '..', 'src', 'index.js'),

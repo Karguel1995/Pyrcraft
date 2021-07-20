@@ -51,7 +51,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'style.[contenthash:6].css',
       chunkFilename: 'style.[contenthash:6].css',
-      publickPath: './'
+      publicPath: './'
 
     }),
   ],
