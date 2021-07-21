@@ -1,17 +1,28 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Header from './components/Header/Header';
 import Navigation from './components/Navigation/Navigation';
 import MainPage from './components/MainPage/MainPage';
+import Gallery from './components/Gallery/Gallery';
 import './App.scss'
 
 const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <Navigation />
-      <MainPage />
-    </div>
+    <Router basename={process.env.PUBLIC_URL}>
+      <div className="App">
+        <Header />
+        <Navigation />
+        <Switch>
+          <Route path="/" exact>
+            <MainPage />
+          </Route>
+          <Route path="/gallery">
+            <Gallery />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
