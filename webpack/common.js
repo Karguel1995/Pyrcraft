@@ -1,13 +1,17 @@
 const path = require('path').resolve;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const destinationPath = path(__dirname, '..', 'build');
+const sourcePath = path(__dirname, '..', 'src');
+
 module.exports = {
     entry: {
-        index: path(__dirname, '..', 'src', 'index.js'),
+        index: path(sourcePath, 'index.js'),
     },
-    output: {
-        filename: '[name].[contenthash:6].js',
-        path: path(__dirname, '..', 'build'),
+      output: {
+      path: path(destinationPath),
+      chunkFilename: 'js/[name].[contenthash:6].js',
+      filename: '[name].[contenthash:6].js',
     },
     resolve: {
         extensions: ['.js', '.jsx'],
