@@ -6049,7 +6049,9 @@ var Gallery = () => {
 
 
 var App_App = () => {
-  return /*#__PURE__*/react.createElement(BrowserRouter, null, /*#__PURE__*/react.createElement("div", {
+  return /*#__PURE__*/react.createElement(BrowserRouter, {
+    basename: process.env.PUBLIC_URL
+  }, /*#__PURE__*/react.createElement("div", {
     className: "App"
   }, /*#__PURE__*/react.createElement(components_Header_Header, null), /*#__PURE__*/react.createElement(components_Navigation_Navigation, null), /*#__PURE__*/react.createElement(Switch, null, /*#__PURE__*/react.createElement(Route, {
     path: "/",
