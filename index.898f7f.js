@@ -5823,7 +5823,7 @@ var Navigation_Navigation = () => {
 /* harmony default export */ const components_Navigation_Navigation = (Navigation_Navigation);
 ;// CONCATENATED MODULE: ./src/components/MainPage/MainPage.scss
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const MainPage = ({"images-container":"images-container","line":"line","image-container":"image-container","main-images-container":"main-images-container","left-image":"left-image","right-image":"right-image"});
+/* harmony default export */ const MainPage = ({"images-container":"images-container","line":"line","image-container":"image-container","left-image-container":"left-image-container","right-image-container":"right-image-container","bottom-image-container":"bottom-image-container","image":"image","right":"right","left":"left","bottom":"bottom","main-images-container":"main-images-container"});
 // EXTERNAL MODULE: ./node_modules/aos/dist/aos.js
 var aos = __webpack_require__(711);
 var aos_default = /*#__PURE__*/__webpack_require__.n(aos);
@@ -5983,13 +5983,13 @@ var Contact_Contact = () => {
 
 /* harmony default export */ const subcomponents_Contact_Contact = (Contact_Contact);
 ;// CONCATENATED MODULE: ./images/mainPhotos/gardenfurniture.jpg
-/* harmony default export */ const gardenfurniture = (__webpack_require__.p + "static/images/gardenfurniture.502e3950.jpg");
+/* harmony default export */ const gardenfurniture = (__webpack_require__.p + "static/images/gardenfurniture.7d9c173a.jpg");
 ;// CONCATENATED MODULE: ./images/mainPhotos/stairsBefore.jpg
-/* harmony default export */ const stairsBefore = (__webpack_require__.p + "static/images/stairsBefore.93ef0642.jpg");
+/* harmony default export */ const stairsBefore = (__webpack_require__.p + "static/images/stairsBefore.313b45c2.jpg");
 ;// CONCATENATED MODULE: ./images/mainPhotos/stairsAfter.jpg
-/* harmony default export */ const stairsAfter = (__webpack_require__.p + "static/images/stairsAfter.3d4b7933.jpg");
+/* harmony default export */ const stairsAfter = (__webpack_require__.p + "static/images/stairsAfter.ff89b01c.jpg");
 ;// CONCATENATED MODULE: ./images/mainPhotos/furnitures2.jpg
-/* harmony default export */ const furnitures2 = (__webpack_require__.p + "static/images/furnitures2.d6ea65ee.jpg");
+/* harmony default export */ const furnitures2 = (__webpack_require__.p + "static/images/furnitures2.87c51de6.jpg");
 ;// CONCATENATED MODULE: ./src/components/MainPage/MainPage.jsx
 
 
@@ -6001,37 +6001,32 @@ var Contact_Contact = () => {
 
 
 var MainPage_MainPage = () => {
-  var [stairsImage, setStairsImage] = (0,react.useState)(stairsBefore);
+  // const [stairsImage, setStairsImage] = useState(rightImageBefore)
   return /*#__PURE__*/react.createElement("main", null, /*#__PURE__*/react.createElement("div", {
     className: "images-container"
   }, /*#__PURE__*/react.createElement("div", {
     className: "main-images-container"
   }, /*#__PURE__*/react.createElement("div", {
-    className: "image-container"
+    className: "image-container left-image-container"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "left image"
   }, /*#__PURE__*/react.createElement("h1", null, "Meble ogrodowe"), /*#__PURE__*/react.createElement("div", {
     className: "line"
-  }), /*#__PURE__*/react.createElement("img", {
-    src: gardenfurniture,
-    className: "left-image"
-  }), /*#__PURE__*/react.createElement("p", null, "Poszukujesz dobrej jako\u015Bci mebli ogrodowych, kt\xF3re przetrwaj\u0105 ka\u017Cde warunki?")), /*#__PURE__*/react.createElement("div", {
-    className: "image-container",
-    onMouseOver: () => {
-      setStairsImage(stairsAfter);
-    },
-    onMouseOut: () => {
-      setStairsImage(stairsBefore);
-    }
+  }), /*#__PURE__*/react.createElement("p", null, "Poszukujesz dobrej jako\u015Bci mebli ogrodowych, kt\xF3re przetrwaj\u0105 ka\u017Cde warunki?"))), /*#__PURE__*/react.createElement("div", {
+    className: "image-container right-image-container"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "right image"
   }, /*#__PURE__*/react.createElement("h1", null, "Schody"), /*#__PURE__*/react.createElement("div", {
     className: "line"
-  }), /*#__PURE__*/react.createElement("img", {
-    src: stairsImage,
-    className: "right-image"
-  }), /*#__PURE__*/react.createElement("p", null, "Marz\u0105 Ci si\u0119 nowoczesne schody z o\u015Bwietleniem?"))), /*#__PURE__*/react.createElement("div", {
-    className: "image-container"
-  }, /*#__PURE__*/react.createElement("h1", null, "Meble"), /*#__PURE__*/react.createElement("img", {
-    src: furnitures2,
-    className: "bottomImage"
-  }))), /*#__PURE__*/react.createElement(subcomponents_AboutUs_AboutUs, null), /*#__PURE__*/react.createElement(subcomponents_Contact_Contact, null));
+  }), /*#__PURE__*/react.createElement("p", null, "Marz\u0105 Ci si\u0119 nowoczesne schody z o\u015Bwietleniem?")))), /*#__PURE__*/react.createElement("div", {
+    className: "main-images-container"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "image-container bottom-image-container"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "bottom image"
+  }, /*#__PURE__*/react.createElement("h1", null, "Meble"), /*#__PURE__*/react.createElement("div", {
+    className: "line"
+  }), /*#__PURE__*/react.createElement("p", null, "Marz\u0105 Ci si\u0119 nowoczesne schody z o\u015Bwietleniem?"))))), /*#__PURE__*/react.createElement(subcomponents_AboutUs_AboutUs, null), /*#__PURE__*/react.createElement(subcomponents_Contact_Contact, null));
 };
 
 /* harmony default export */ const components_MainPage_MainPage = (MainPage_MainPage);
@@ -6040,7 +6035,7 @@ var image_gallery = __webpack_require__(982);
 var image_gallery_default = /*#__PURE__*/__webpack_require__.n(image_gallery);
 ;// CONCATENATED MODULE: ./src/components/Gallery/Gallery.scss
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const Gallery = ({"image-gallery-icon":"image-gallery-icon","image-gallery-svg":"image-gallery-svg","image-gallery-using-mouse":"image-gallery-using-mouse","image-gallery-fullscreen-button":"image-gallery-fullscreen-button","image-gallery-play-button":"image-gallery-play-button","image-gallery-left-nav":"image-gallery-left-nav","image-gallery-right-nav":"image-gallery-right-nav","image-gallery":"image-gallery","fullscreen-modal":"fullscreen-modal","image-gallery-content":"image-gallery-content","fullscreen":"fullscreen","image-gallery-slide":"image-gallery-slide","image-gallery-image":"image-gallery-image","left":"left","right":"right","image-gallery-slide-wrapper":"image-gallery-slide-wrapper","image-gallery-rtl":"image-gallery-rtl","image-gallery-slides":"image-gallery-slides","center":"center","image-gallery-description":"image-gallery-description","image-gallery-bullets":"image-gallery-bullets","image-gallery-bullets-container":"image-gallery-bullets-container","image-gallery-bullet":"image-gallery-bullet","active":"active","image-gallery-thumbnails-wrapper":"image-gallery-thumbnails-wrapper","thumbnails-swipe-horizontal":"thumbnails-swipe-horizontal","thumbnails-swipe-vertical":"thumbnails-swipe-vertical","thumbnails-wrapper-rtl":"thumbnails-wrapper-rtl","image-gallery-thumbnails":"image-gallery-thumbnails","image-gallery-thumbnail":"image-gallery-thumbnail","image-gallery-thumbnails-container":"image-gallery-thumbnails-container","image-gallery-thumbnail-inner":"image-gallery-thumbnail-inner","image-gallery-thumbnail-image":"image-gallery-thumbnail-image","image-gallery-thumbnail-label":"image-gallery-thumbnail-label","image-gallery-index":"image-gallery-index"});
+/* harmony default export */ const Gallery = ({"gallery-container":"gallery-container","image-gallery-icon":"image-gallery-icon","image-gallery-svg":"image-gallery-svg","image-gallery-using-mouse":"image-gallery-using-mouse","image-gallery-fullscreen-button":"image-gallery-fullscreen-button","image-gallery-play-button":"image-gallery-play-button","image-gallery-left-nav":"image-gallery-left-nav","image-gallery-right-nav":"image-gallery-right-nav","image-gallery":"image-gallery","fullscreen-modal":"fullscreen-modal","image-gallery-content":"image-gallery-content","fullscreen":"fullscreen","image-gallery-slide":"image-gallery-slide","image-gallery-image":"image-gallery-image","left":"left","right":"right","image-gallery-slide-wrapper":"image-gallery-slide-wrapper","image-gallery-rtl":"image-gallery-rtl","image-gallery-slides":"image-gallery-slides","center":"center","image-gallery-description":"image-gallery-description","image-gallery-bullets":"image-gallery-bullets","image-gallery-bullets-container":"image-gallery-bullets-container","image-gallery-bullet":"image-gallery-bullet","active":"active","image-gallery-thumbnails-wrapper":"image-gallery-thumbnails-wrapper","thumbnails-swipe-horizontal":"thumbnails-swipe-horizontal","thumbnails-swipe-vertical":"thumbnails-swipe-vertical","thumbnails-wrapper-rtl":"thumbnails-wrapper-rtl","image-gallery-thumbnails":"image-gallery-thumbnails","image-gallery-thumbnail":"image-gallery-thumbnail","image-gallery-thumbnails-container":"image-gallery-thumbnails-container","image-gallery-thumbnail-inner":"image-gallery-thumbnail-inner","image-gallery-thumbnail-image":"image-gallery-thumbnail-image","image-gallery-thumbnail-label":"image-gallery-thumbnail-label","image-gallery-index":"image-gallery-index"});
 ;// CONCATENATED MODULE: ./src/components/Gallery/images/greenhouse-750-1000.jpg
 /* harmony default export */ const greenhouse_750_1000 = (__webpack_require__.p + "static/images/greenhouse-750-1000.8494c45f.jpg");
 ;// CONCATENATED MODULE: ./src/components/Gallery/images/bookshelf1-750-1000.jpg
@@ -6138,9 +6133,11 @@ var Gallery_images = [{
 }];
 
 var Gallery_Gallery = () => {
-  return /*#__PURE__*/react.createElement((image_gallery_default()), {
+  return /*#__PURE__*/react.createElement("div", {
+    className: "gallery-container"
+  }, /*#__PURE__*/react.createElement((image_gallery_default()), {
     items: Gallery_images
-  });
+  }));
 };
 
 /* harmony default export */ const components_Gallery_Gallery = (Gallery_Gallery);
