@@ -5761,7 +5761,7 @@ var Header_Header = () => {
 var modules = __webpack_require__(261);
 ;// CONCATENATED MODULE: ./src/components/Navigation/Navigation.scss
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const Navigation = ({"fixed":"fixed","nav-container":"nav-container","navigation-contener":"navigation-contener","navigation-list":"navigation-list"});
+/* harmony default export */ const Navigation = ({"fixed":"fixed","hamburger":"hamburger","nav-container":"nav-container","navigation-contener":"navigation-contener","navigation-list":"navigation-list","not-visible-nav":"not-visible-nav","visible-nav":"visible-nav","navSlide":"navSlide","fa-times":"fa-times"});
 ;// CONCATENATED MODULE: ./src/components/Navigation/Navigation.jsx
 
 
@@ -5776,12 +5776,59 @@ var Navigation_Navigation = () => {
     offset > 120 ? setIsNavigationFixed(true) : setIsNavigationFixed(false);
   };
 
+  var [isMobileNavigationVisible, setIsMoblieNavigationVisible] = (0,react.useState)(false);
   (0,react.useEffect)(() => {
     window.addEventListener('scroll', handleScroll);
   });
   return /*#__PURE__*/react.createElement("nav", {
     id: "home"
   }, /*#__PURE__*/react.createElement("div", {
+    className: "hamburger"
+  }, /*#__PURE__*/react.createElement("i", {
+    className: "fas fa-bars",
+    onClick: () => setIsMoblieNavigationVisible(true)
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "".concat(isMobileNavigationVisible ? 'visible-nav' : 'not-visible-nav')
+  }, /*#__PURE__*/react.createElement("ul", {
+    className: "navigation-contener"
+  }, /*#__PURE__*/react.createElement(modules/* Link */.rU, {
+    className: "navigation-list",
+    to: "home",
+    spy: true,
+    smooth: true,
+    offset: 0,
+    duration: 500,
+    onClick: () => setIsMoblieNavigationVisible(false)
+  }, /*#__PURE__*/react.createElement(Link, {
+    to: "/"
+  }, "Strona g\u0142\xF3wna")), /*#__PURE__*/react.createElement(modules/* Link */.rU, {
+    className: "navigation-list",
+    to: "aboutUs",
+    spy: true,
+    smooth: true,
+    offset: 0,
+    duration: 500,
+    onClick: () => setIsMoblieNavigationVisible(false)
+  }, /*#__PURE__*/react.createElement(Link, {
+    to: "/"
+  }, "O nas")), /*#__PURE__*/react.createElement(modules/* Link */.rU, {
+    className: "navigation-list",
+    to: "contact",
+    spy: true,
+    smooth: true,
+    offset: 0,
+    duration: 500,
+    onClick: () => setIsMoblieNavigationVisible(false)
+  }, /*#__PURE__*/react.createElement(Link, {
+    to: "/"
+  }, "Kontakt")), /*#__PURE__*/react.createElement(Link, {
+    className: "navigation-list",
+    to: "/gallery",
+    onClick: () => setIsMoblieNavigationVisible(false)
+  }, "Galeria")), /*#__PURE__*/react.createElement("i", {
+    className: "fas fa-times",
+    onClick: () => setIsMoblieNavigationVisible(false)
+  }))), /*#__PURE__*/react.createElement("div", {
     className: "nav-container ".concat(isNavigationFixed ? "fixed" : "")
   }, /*#__PURE__*/react.createElement("ul", {
     className: "navigation-contener"
@@ -5796,6 +5843,7 @@ var Navigation_Navigation = () => {
     className: "navigation-list",
     to: "/"
   }, "Strona g\u0142\xF3wna")), /*#__PURE__*/react.createElement(modules/* Link */.rU, {
+    className: "navigation-list",
     to: "aboutUs",
     spy: true,
     smooth: true,
@@ -5823,7 +5871,7 @@ var Navigation_Navigation = () => {
 /* harmony default export */ const components_Navigation_Navigation = (Navigation_Navigation);
 ;// CONCATENATED MODULE: ./src/components/MainPage/MainPage.scss
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const MainPage = ({"images-container":"images-container","line":"line","image-container":"image-container","left-image-container":"left-image-container","right-image-container":"right-image-container","bottom-image-container":"bottom-image-container","image":"image","right":"right","left":"left","bottom":"bottom","main-images-container":"main-images-container"});
+/* harmony default export */ const MainPage = ({"images-container":"images-container","line":"line","image-container":"image-container","left-image-container":"left-image-container","right-image-container":"right-image-container","bottom-image-container":"bottom-image-container","image":"image","right":"right","left":"left","bottom":"bottom","main-images-container":"main-images-container","bottom-images-container":"bottom-images-container"});
 // EXTERNAL MODULE: ./node_modules/aos/dist/aos.js
 var aos = __webpack_require__(711);
 var aos_default = /*#__PURE__*/__webpack_require__.n(aos);
@@ -6007,7 +6055,7 @@ var MainPage_MainPage = () => {
   }), /*#__PURE__*/react.createElement("h1", null, "Schody"), /*#__PURE__*/react.createElement("div", {
     className: "line"
   }), /*#__PURE__*/react.createElement("p", null, "Marz\u0105 Ci si\u0119 nowoczesne schody z o\u015Bwietleniem?"))), /*#__PURE__*/react.createElement("div", {
-    className: "main-images-container"
+    className: "bottom-images-container"
   }, /*#__PURE__*/react.createElement("div", {
     className: "image-container bottom-image-container"
   }, /*#__PURE__*/react.createElement("div", {
