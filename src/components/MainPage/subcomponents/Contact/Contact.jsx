@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 
 import './Contact.scss'
 
 const Contact = () => {
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleInputChange = (e) => {
+    if (e.target.id === 'name') {
+      setName(e.target.value)
+    }
+    else if (e.target.id === 'email') {
+      setEmail(e.target.value)
+    }
+    else if (e.target.id === 'subject') {
+      setSubject(e.target.value)
+    }
+    else if (e.target.id === 'message') {
+      setMessage(e.target.value)
+    }
+  }
+
   return (
-    <div className="contact-page">
+    <div id="contact" className="contact-page">
       <h2>Kontakt</h2>
       <div className="contact-container">
         <div className="contact-left">
@@ -27,16 +48,17 @@ const Contact = () => {
         <div className="contact-right">
           <form>
             <label htmlFor="name">Twoje imie:</label>
-            <input type="text" id="name" placeholder="Wpisz imie..." value="Pyrk" />
+            <input type="text" id="name" onChange={handleInputChange} placeholder="Wpisz imie..." value={name} />
 
             <label htmlFor="email">Twój email:</label>
-            <input type="text" id="email" placeholder="Wpisz email..." value="pyrk@pyrcrafts" />
+            <input type="text" id="email" onChange={handleInputChange} placeholder="Wpisz email..." value={email} />
 
             <label htmlFor="subject">Temat:</label>
-            <input type="text" id="subject" placeholder="Temat wiadomości" value="Pyrk pyrk?" />
+            <input type="text" id="subject" onChange={handleInputChange} placeholder="Temat wiadomości" value={subject} />
 
             <label htmlFor="message">Wiadomość:</label>
-            <textarea id="message" placeholder="Wpisz wiadomość" value="Pyrki to takie ziemniaki, ale z rybami" />
+            <textarea id="message" onChange={handleInputChange} placeholder="Wpisz wiadomość" value={message} />
+            <button>Wyślij wiadomość</button>
           </form>
         </div>
       </div>

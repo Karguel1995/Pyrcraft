@@ -12,11 +12,12 @@ const AboutUs = () => {
   useEffect(() => {
     Aos.init({
       duration: 2000,
-      mirror: true
+      mirror: false
     });
   }, []);
+
   return (
-    <div className="about-us-page">
+    <div id="aboutUs" className="about-us-page">
       <div className="advantages">
         <h2 data-aos="slide-right">Dlaczego warto wybrać akurat nas?</h2>
         <div className="advantages-list">

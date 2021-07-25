@@ -1,16 +1,10 @@
 main {
-  padding: 10px 0 200px;
+  padding: 20px 0 200px;
   min-height: calc(100vh - 180px);
 
   .images-container {
-    width: 1080px;
+    max-width: 1080px;
     margin: 0 auto;
-
-    img {
-      padding: 20px;
-      filter: brightness(85%);
-      transition: .3s;
-    }
 
     h1 {
       position: absolute;
@@ -18,7 +12,7 @@ main {
       left: 50%;
       transform: translate(-50%, -50%);
       color: #fff;
-      z-index: 1;
+      text-align: center;
       font-size: 32px;
       transition: .5s;
     }
@@ -49,26 +43,63 @@ main {
 
     .image-container {
       position: relative;
+      cursor: pointer;
     }
 
-    .main-images-container {
+    .left-image-container {
+      width: 677px;
+      height: 500px;
+    }
+
+    .right-image-container {
+      width: 375px;
+      height: 500px;
+    }
+
+    .bottom-image-container {
+      width: 1080px;
+      height: 405px;
+    }
+
+    .image {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      filter: brightness(85%);
+      transition: .3s;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .right {
+      background-image: url(../../../images/mainPhotos/stairsBefore.jpg);
+    }
+
+    .right:hover {
+      background-image: url(../../../images/mainPhotos/stairsAfter.jpg);
+    }
+
+    .left {
+      background-image: url(../../../images/mainPhotos/gardenFurniture.jpg);
+    }
+
+    .bottom {
+      background-image: url(../../../images/mainPhotos/furnitures2.jpg);
+    }
+
+    .main-images-container,
+    .bottom-images-container {
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
       justify-content: space-between;
-
-      .left-image {
-        height: 500px;
-      }
-
-      .right-image {
-        height: 500px;
-      }
     }
 
     .image-container:hover {
-      img {
-        filter: brightness(60%) blur(1px);
+      .image {
+        filter: brightness(50%);
       }
 
       h1 {
@@ -83,6 +114,88 @@ main {
       p {
         top: 70%;
         opacity: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  main {
+    .images-container {
+      .left-image-container {
+        height: 400px;
+      }
+
+      .right-image-container {
+        height: 400px;
+      }
+
+      .bottom-image-container {
+        height: 305px;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  main {
+    .images-container {
+
+      .main-images-container {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .left-image-container {
+        width: 677px;
+        height: 500px;
+      }
+
+      .right-image-container {
+        width: 375px;
+        height: 500px;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  main {
+    .images-container {
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .line {
+        height: 3px;
+      }
+
+
+      .left-image-container {
+        width: 677px;
+        height: 300px;
+      }
+
+      .right-image-container {
+        width: 375px;
+        height: 350px;
+      }
+
+      .bottom-image-container {
+        height: 205px;
+      }
+
+
+      .image-container:hover {
+
+        h1 {
+          top: 30%;
+        }
       }
     }
   }

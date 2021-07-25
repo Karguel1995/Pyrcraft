@@ -3,11 +3,12 @@ header {
 
   .header-wrapper {
     margin: 0 auto;
-    width: 1080px;
+    max-width: 1080px;
     height: 100%;
     display: flex;
 
     .logo {
+      margin-left: 10px;
       width: 120px;
       background-position: center;
       background-size: 120px;
@@ -23,6 +24,51 @@ header {
       .header-contact-info {
         margin: 20px;
         font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  header {
+    .header-wrapper {
+      .header-contact {
+        .header-contact-info {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  header {
+    height: 80px;
+
+    .header-wrapper {
+      .logo {
+        margin-left: 10px;
+        width: 80px;
+        background-position: center;
+        background-size: 80px;
+        background-image: url('./logoPyrcrafts.png');
+      }
+
+      .header-contact {
+        .header-contact-info {
+          margin: 5px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  header {
+    .header-wrapper {
+      .header-contact {
+        display: none;
       }
     }
   }

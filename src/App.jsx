@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import Header from './components/Header/Header';
 import Navigation from './components/Navigation/Navigation';
@@ -9,7 +9,7 @@ import './App.scss'
 
 const App = () => {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div className="App">
         <Header />
         <Navigation />
