@@ -1821,7 +1821,7 @@ var _scroller = __webpack_require__(628);
 
 var _scroller2 = _interopRequireDefault(_scroller);
 
-var _scrollEvents = __webpack_require__(592);
+var _scrollEvents = __webpack_require__(356);
 
 var _scrollEvents2 = _interopRequireDefault(_scrollEvents);
 
@@ -2216,7 +2216,7 @@ var _cancelEvents = __webpack_require__(140);
 
 var _cancelEvents2 = _interopRequireDefault(_cancelEvents);
 
-var _scrollEvents = __webpack_require__(592);
+var _scrollEvents = __webpack_require__(356);
 
 var _scrollEvents2 = _interopRequireDefault(_scrollEvents);
 
@@ -2622,7 +2622,7 @@ exports.default = function (Component) {
 
 /***/ }),
 
-/***/ 592:
+/***/ 356:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -3159,7 +3159,7 @@ var _animateScroll = __webpack_require__(200);
 
 var _animateScroll2 = _interopRequireDefault(_animateScroll);
 
-var _scrollEvents = __webpack_require__(592);
+var _scrollEvents = __webpack_require__(356);
 
 var _scrollEvents2 = _interopRequireDefault(_scrollEvents);
 
@@ -5749,11 +5749,15 @@ var Header_Header = () => {
     className: "logo"
   }), /*#__PURE__*/react.createElement("div", {
     className: "header-contact"
-  }, /*#__PURE__*/react.createElement("div", {
+  }, /*#__PURE__*/react.createElement("i", {
+    class: "fas fa-envelope"
+  }), /*#__PURE__*/react.createElement("div", {
     className: "header-contact-info"
-  }, "Email: pyrk@pyrcrafts.pl"), /*#__PURE__*/react.createElement("div", {
+  }, "Email:", /*#__PURE__*/react.createElement("p", null, "pyrcrafts@gmail.com")), /*#__PURE__*/react.createElement("i", {
+    class: "fas fa-phone-square-alt"
+  }), /*#__PURE__*/react.createElement("div", {
     className: "header-contact-info"
-  }, "Telefon: pyrk pyrk pyrk")))));
+  }, "Telefon:", /*#__PURE__*/react.createElement("p", null, "+48 600 004 736"))))));
 };
 
 /* harmony default export */ const components_Header_Header = (Header_Header);
@@ -5989,11 +5993,17 @@ var Contact_Contact = () => {
     className: "contact-left"
   }, /*#__PURE__*/react.createElement("div", {
     className: "contact-details"
-  }, /*#__PURE__*/react.createElement("h3", null, "Adres:"), /*#__PURE__*/react.createElement("p", null, "Malanowo"), /*#__PURE__*/react.createElement("p", null, "pyrk pyrk")), /*#__PURE__*/react.createElement("div", {
+  }, /*#__PURE__*/react.createElement("h3", null, /*#__PURE__*/react.createElement("i", {
+    class: "fas fa-map-marker-alt"
+  }), " Adres:"), /*#__PURE__*/react.createElement("p", null, "Polska 05-088 Broch\xF3w,"), /*#__PURE__*/react.createElement("p", null, "Woj. Mazowieckie")), /*#__PURE__*/react.createElement("div", {
     className: "contact-details"
-  }, /*#__PURE__*/react.createElement("h3", null, "Numer telefonu:"), /*#__PURE__*/react.createElement("p", null, "pyrk pyrk pyrk")), /*#__PURE__*/react.createElement("div", {
+  }, /*#__PURE__*/react.createElement("h3", null, /*#__PURE__*/react.createElement("i", {
+    class: "fas fa-phone-alt"
+  }), " Numer telefonu:"), /*#__PURE__*/react.createElement("p", null, "+48 600 004 736")), /*#__PURE__*/react.createElement("div", {
     className: "contact-details"
-  }, /*#__PURE__*/react.createElement("h3", null, "Email:"), /*#__PURE__*/react.createElement("p", null, "pyrk@pyrcrafts.pl"))), /*#__PURE__*/react.createElement("div", {
+  }, /*#__PURE__*/react.createElement("h3", null, /*#__PURE__*/react.createElement("i", {
+    class: "far fa-envelope"
+  }), " Email:"), /*#__PURE__*/react.createElement("p", null, "pyrcrafts@gmail.com"))), /*#__PURE__*/react.createElement("div", {
     className: "contact-right"
   }, /*#__PURE__*/react.createElement("form", null, /*#__PURE__*/react.createElement("label", {
     htmlFor: "name"
@@ -6030,7 +6040,33 @@ var Contact_Contact = () => {
 };
 
 /* harmony default export */ const subcomponents_Contact_Contact = (Contact_Contact);
+;// CONCATENATED MODULE: ./src/components/MainPage/subcomponents/Footer/Footer.scss
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Footer = ({"footer-container":"footer-container","copyright":"copyright","facebook":"facebook"});
+;// CONCATENATED MODULE: ./src/components/MainPage/subcomponents/Footer/Footer.jsx
+
+
+
+var Footer_Footer = () => {
+  return /*#__PURE__*/react.createElement("div", {
+    className: "footer-container"
+  }, /*#__PURE__*/react.createElement("a", {
+    className: "facebook",
+    href: "https://www.facebook.com/pyrcrafts"
+  }, /*#__PURE__*/react.createElement("i", {
+    class: "fab fa-facebook-square"
+  }), " Facebook"), /*#__PURE__*/react.createElement("div", {
+    className: "copyright"
+  }, /*#__PURE__*/react.createElement("span", null, "\xA9"), " Copyright 2021. All Rights Reserved | Website Designed by ", /*#__PURE__*/react.createElement("a", {
+    href: "https://github.com/Karguel1995"
+  }, /*#__PURE__*/react.createElement("i", {
+    class: "fab fa-github"
+  }), " Karguel1995")));
+};
+
+/* harmony default export */ const subcomponents_Footer_Footer = (Footer_Footer);
 ;// CONCATENATED MODULE: ./src/components/MainPage/MainPage.jsx
+
 
 
 
@@ -6062,7 +6098,7 @@ var MainPage_MainPage = () => {
     className: "bottom image"
   }), /*#__PURE__*/react.createElement("h1", null, "Meble"), /*#__PURE__*/react.createElement("div", {
     className: "line"
-  }), /*#__PURE__*/react.createElement("p", null, "Szeroka gama mebli, kt\xF3re upi\u0119ksz\u0105 Tw\xF3j dom")))), /*#__PURE__*/react.createElement(subcomponents_AboutUs_AboutUs, null), /*#__PURE__*/react.createElement(subcomponents_Contact_Contact, null));
+  }), /*#__PURE__*/react.createElement("p", null, "Szeroka gama mebli, kt\xF3re upi\u0119ksz\u0105 Tw\xF3j dom")))), /*#__PURE__*/react.createElement(subcomponents_AboutUs_AboutUs, null), /*#__PURE__*/react.createElement(subcomponents_Contact_Contact, null), /*#__PURE__*/react.createElement(subcomponents_Footer_Footer, null));
 };
 
 /* harmony default export */ const components_MainPage_MainPage = (MainPage_MainPage);
