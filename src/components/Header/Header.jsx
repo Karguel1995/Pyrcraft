@@ -9,8 +9,14 @@ const Header = () => {
         <div className="header-wrapper">
           <div className="logo"></div>
           <div className="header-contact">
-            <div className="header-contact-info">Email: pyrcrafts@gmail.com</div>
-            <div className="header-contact-info">Telefon: +48 600 004 736</div>
+            <i class="fas fa-envelope"></i>
+            <div className="header-contact-info">
+              Email:
+              <p>pyrcrafts@gmail.com</p></div>
+            <i class="fas fa-phone-square-alt"></i>
+            <div className="header-contact-info">
+              Telefon:
+              <p>+48 600 004 736</p></div>
           </div>
         </div>
       </header>

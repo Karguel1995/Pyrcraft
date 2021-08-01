@@ -30,18 +30,18 @@ const Contact = () => {
       <div className="contact-container">
         <div className="contact-left">
           <div className="contact-details">
-            <h3>Adres:</h3>
+            <h3><i class="fas fa-map-marker-alt"></i> Adres:</h3>
             <p>Polska 05-088 Brochów,</p>
             <p>Woj. Mazowieckie</p>
           </div>
 
           <div className="contact-details">
-            <h3>Numer telefonu:</h3>
+            <h3><i class="fas fa-phone-alt"></i> Numer telefonu:</h3>
             <p>+48 600 004 736</p>
           </div>
 
           <div className="contact-details">
-            <h3>Email:</h3>
+            <h3><i class="far fa-envelope"></i> Email:</h3>
             <p>pyrcrafts@gmail.com</p>
           </div>
         </div>

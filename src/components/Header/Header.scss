@@ -21,6 +21,10 @@ header {
       justify-content: flex-end;
       align-items: center;
 
+      i {
+        font-size: 36px;
+      }
+
       .header-contact-info {
         margin: 20px;
         font-size: 18px;
@@ -33,6 +37,10 @@ header {
   header {
     .header-wrapper {
       .header-contact {
+        i {
+          font-size: 28px;
+        }
+
         .header-contact-info {
           font-size: 16px;
         }
@@ -55,9 +63,12 @@ header {
       }
 
       .header-contact {
+        i {
+          font-size: 24px;
+        }
+
         .header-contact-info {
           margin: 5px;
-          font-size: 16px;
         }
       }
     }
