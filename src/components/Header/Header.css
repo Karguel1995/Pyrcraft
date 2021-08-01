@@ -1,0 +1,70 @@
+header {
+  height: 120px;
+}
+
+header .header-wrapper {
+  margin: 0 auto;
+  max-width: 1080px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header-wrapper .logo {
+  margin-left: 10px;
+  width: 120px;
+  background-position: center;
+  background-size: 120px;
+  background-image: url("./logoPyrcrafts.png");
+}
+
+header .header-wrapper .header-contact {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-wrapper .header-contact .header-contact-info {
+  margin: 20px;
+  font-size: 18px;
+}
+
+@media (max-width: 750px) {
+  header .header-wrapper .header-contact .header-contact-info {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 550px) {
+  header {
+    height: 80px;
+  }
+  header .header-wrapper .logo {
+    margin-left: 10px;
+    width: 80px;
+    background-position: center;
+    background-size: 80px;
+    background-image: url("./logoPyrcrafts.png");
+  }
+  header .header-wrapper .header-contact .header-contact-info {
+    margin: 5px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  header .header-wrapper .header-contact {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

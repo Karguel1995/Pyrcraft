@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: calc(100% + 1px);
+  z-index: 2;
+}
+
+nav {
+  height: 60px;
+}
+
+nav .hamburger {
+  display: none;
+}
+
+nav .nav-container {
+  height: 60px;
+  background-image: url(../../../images/nav/navWood.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+nav .nav-container ul.navigation-contener {
+  max-width: 1080px;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+nav .nav-container ul.navigation-contener a.navigation-list {
+  font-size: 18px;
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (max-width: 450px) {
+  .fixed {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: calc(100% + 1px);
+    z-index: 2;
+  }
+  nav {
+    height: 0;
+  }
+  nav .hamburger {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 5;
+    background-color: #EBEFF2;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10%;
+  }
+  nav .hamburger i {
+    line-height: 40px;
+    font-size: 32px;
+    color: #3d262a;
+  }
+  nav .hamburger .not-visible-nav {
+    display: none;
+  }
+  nav .hamburger .visible-nav {
+    z-index: 2;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 30%;
+    right: 0;
+    bottom: 0;
+    background-color: #3d262a;
+    -webkit-animation: navSlide .5s;
+            animation: navSlide .5s;
+  }
+  nav .hamburger .visible-nav ul.navigation-contener {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav .hamburger .visible-nav ul.navigation-contener .navigation-list,
+  nav .hamburger .visible-nav ul.navigation-contener a {
+    font-size: 20px;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  nav .hamburger .visible-nav ul.navigation-contener .navigation-list {
+    border-bottom: 1px rgba(167, 167, 167, 0.2) solid;
+    line-height: 50px;
+  }
+  nav .hamburger .visible-nav .fa-times {
+    position: fixed;
+    top: 20px;
+    left: 20%;
+  }
+  .nav-container {
+    display: none;
+  }
+}
+
+@-webkit-keyframes navSlide {
+  0% {
+    left: 100%;
+    right: -100%;
+  }
+  100% {
+    left: 30%;
+    right: 0;
+  }
+}
+
+@keyframes navSlide {
+  0% {
+    left: 100%;
+    right: -100%;
+  }
+  100% {
+    left: 30%;
+    right: 0;
+  }
+}
+/*# sourceMappingURL=Navigation.css.map */

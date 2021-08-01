@@ -1,0 +1,191 @@
+main {
+  padding: 20px 0 200px;
+  min-height: calc(100vh - 180px);
+}
+
+main .images-container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+main .images-container h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+main .images-container p {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  opacity: 0%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+main .images-container .line {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 60%;
+  height: 4px;
+  opacity: 0%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: 1;
+}
+
+main .images-container .image-container {
+  position: relative;
+  cursor: pointer;
+}
+
+main .images-container .left-image-container {
+  width: 677px;
+  height: 500px;
+}
+
+main .images-container .right-image-container {
+  width: 375px;
+  height: 500px;
+}
+
+main .images-container .bottom-image-container {
+  width: 1080px;
+  height: 405px;
+}
+
+main .images-container .image {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  -webkit-filter: brightness(85%);
+          filter: brightness(85%);
+  -webkit-transition: .3s;
+  transition: .3s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main .images-container .right {
+  background-image: url(../../../images/mainPhotos/stairsBefore.jpg);
+}
+
+main .images-container .right:hover {
+  background-image: url(../../../images/mainPhotos/stairsAfter.jpg);
+}
+
+main .images-container .left {
+  background-image: url(../../../images/mainPhotos/gardenFurniture.jpg);
+}
+
+main .images-container .bottom {
+  background-image: url(../../../images/mainPhotos/furnitures2.jpg);
+}
+
+main .images-container .main-images-container,
+main .images-container .bottom-images-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .images-container .image-container:hover .image {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+main .images-container .image-container:hover h1 {
+  top: 40%;
+}
+
+main .images-container .image-container:hover .line {
+  top: 50%;
+  opacity: 100%;
+}
+
+main .images-container .image-container:hover p {
+  top: 70%;
+  opacity: 100%;
+}
+
+@media (max-width: 950px) {
+  main .images-container .left-image-container {
+    height: 400px;
+  }
+  main .images-container .right-image-container {
+    height: 400px;
+  }
+  main .images-container .bottom-image-container {
+    height: 305px;
+  }
+}
+
+@media (max-width: 750px) {
+  main .images-container .main-images-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .images-container h1 {
+    font-size: 32px;
+  }
+  main .images-container .left-image-container {
+    width: 677px;
+    height: 500px;
+  }
+  main .images-container .right-image-container {
+    width: 375px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 450px) {
+  main .images-container h1 {
+    font-size: 28px;
+  }
+  main .images-container .line {
+    height: 3px;
+  }
+  main .images-container .left-image-container {
+    width: 677px;
+    height: 300px;
+  }
+  main .images-container .right-image-container {
+    width: 375px;
+    height: 350px;
+  }
+  main .images-container .bottom-image-container {
+    height: 205px;
+  }
+  main .images-container .image-container:hover h1 {
+    top: 30%;
+  }
+}
+/*# sourceMappingURL=MainPage.css.map */

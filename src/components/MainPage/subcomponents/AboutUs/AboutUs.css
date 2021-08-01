@@ -1,0 +1,260 @@
+[data-aos="zoom-in"] {
+  opacity: 0;
+}
+
+.about-us-page {
+  padding-top: 60px;
+  margin-bottom: 100px;
+}
+
+.about-us-page .advantages {
+  background-color: #F2DA5E;
+  min-height: 400px;
+}
+
+.about-us-page .advantages h2 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.about-us-page .advantages .advantages-list {
+  max-width: 1080px;
+  height: 300px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-us-page .advantages .advantages-list div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-us-page .advantages .advantages-list p {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about-us-page .advantages .advantages-list img {
+  margin: 10px auto;
+  width: 96px;
+}
+
+.about-us-page .about-us-container {
+  max-width: 1080px;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-us-page .about-us-container h2 {
+  font-size: 26px;
+  padding: 15px;
+  text-align: center;
+}
+
+.about-us-page .about-us-container .about-us-container-left {
+  width: 68%;
+  padding: 10px;
+}
+
+.about-us-page .about-us-container .about-us-container-left p {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.about-us-page .about-us-container .about-us-container-right {
+  padding: 10px;
+  width: 28%;
+  overflow: hidden;
+}
+
+.about-us-page .about-us-container .about-us-container-right ul {
+  list-style: none;
+}
+
+.about-us-page .about-us-container .about-us-container-right li {
+  line-height: 46px;
+  font-size: 20px;
+}
+
+.about-us-page .about-us-container .about-us-container-right li i {
+  padding-right: 10px;
+}
+
+@media (max-width: 950px) {
+  .about-us-page .about-us-container .about-us-container-left {
+    padding: 10px 0 10px 16px;
+  }
+  .about-us-page .about-us-container .about-us-container-left p {
+    font-size: 16px;
+  }
+  .about-us-page .about-us-container .about-us-container-right li {
+    line-height: 42px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 750px) {
+  .about-us-page {
+    padding-top: 60px;
+    margin-bottom: 100px;
+  }
+  .about-us-page .advantages {
+    background-color: #F2DA5E;
+    min-height: 600px;
+  }
+  .about-us-page .advantages h2 {
+    text-align: center;
+    padding-top: 30px;
+  }
+  .about-us-page .advantages .advantages-list {
+    max-width: 1080px;
+    height: auto;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-us-page .advantages .advantages-list div {
+    margin: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-us-page .advantages .advantages-list p {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .about-us-page .advantages .advantages-list img {
+    margin: 20px auto;
+  }
+  .about-us-page .about-us-container {
+    max-width: 1080px;
+    margin: 20px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about-us-page .about-us-container h2 {
+    font-size: 26px;
+    padding: 15px;
+    text-align: center;
+  }
+  .about-us-page .about-us-container .about-us-container-left {
+    width: auto;
+    padding: 30px;
+  }
+  .about-us-page .about-us-container .about-us-container-left p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .about-us-page .about-us-container .about-us-container-right {
+    padding: 20px;
+    width: auto;
+    overflow: hidden;
+  }
+  .about-us-page .about-us-container .about-us-container-right ul {
+    list-style: none;
+  }
+  .about-us-page .about-us-container .about-us-container-right li {
+    line-height: 46px;
+    font-size: 20px;
+  }
+  .about-us-page .about-us-container .about-us-container-right li i {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .about-us-page .advantages h2 {
+    padding-top: 30px;
+    font-size: 22px;
+  }
+  .about-us-page .advantages .advantages-list p {
+    font-size: 20px;
+  }
+  .about-us-page .advantages .advantages-list img {
+    margin: 20px auto;
+  }
+  .about-us-page .about-us-container {
+    max-width: 1080px;
+    margin: 20px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about-us-page .about-us-container h2 {
+    font-size: 26px;
+    padding: 15px;
+    text-align: center;
+  }
+  .about-us-page .about-us-container .about-us-container-left {
+    width: auto;
+    padding: 30px;
+  }
+  .about-us-page .about-us-container .about-us-container-left p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .about-us-page .about-us-container .about-us-container-right {
+    padding: 20px;
+    width: auto;
+    overflow: hidden;
+  }
+  .about-us-page .about-us-container .about-us-container-right ul {
+    list-style: none;
+  }
+  .about-us-page .about-us-container .about-us-container-right li {
+    line-height: 46px;
+    font-size: 20px;
+  }
+  .about-us-page .about-us-container .about-us-container-right li i {
+    padding-right: 10px;
+  }
+}
+/*# sourceMappingURL=AboutUs.css.map */
