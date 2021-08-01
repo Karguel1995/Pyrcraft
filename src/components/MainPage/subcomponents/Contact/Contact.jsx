@@ -31,18 +31,18 @@ const Contact = () => {
         <div className="contact-left">
           <div className="contact-details">
             <h3>Adres:</h3>
-            <p>Malanowo</p>
-            <p>pyrk pyrk</p>
+            <p>Polska 05-088 Brochów,</p>
+            <p>Woj. Mazowieckie</p>
           </div>
 
           <div className="contact-details">
             <h3>Numer telefonu:</h3>
-            <p>pyrk pyrk pyrk</p>
+            <p>+48 600 004 736</p>
           </div>
 
           <div className="contact-details">
             <h3>Email:</h3>
-            <p>pyrk@pyrcrafts.pl</p>
+            <p>pyrcrafts@gmail.com</p>
           </div>
         </div>
         <div className="contact-right">
