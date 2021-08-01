@@ -1,6 +1,6 @@
 .contact-page {
   max-width: 1080px;
-  padding-top: 60px;
+  padding: 60px 0 40px;
   margin: 0 auto;
 
   h2 {
@@ -42,44 +42,16 @@
 
 @media (max-width: 750px) {
   .contact-page {
-    max-width: 1080px;
-    padding-top: 60px;
-    margin: 0 auto;
-
-    h2 {
-      text-align: center;
-    }
-
     .contact-container {
-      margin-top: 30px;
-      display: flex;
       flex-direction: column;
 
       .contact-left {
         width: auto;
-        flex-grow: 1;
-        text-align: center;
-
-        .contact-details {
-          padding: 20px 0;
-        }
       }
 
       .contact-right {
         width: auto;
-        flex-grow: 1;
         padding: 20px;
-
-        input,
-        textarea {
-          width: 100%;
-          padding: 12px;
-          border: 1px solid #ccc;
-          border-radius: 4px;
-          margin-top: 6px;
-          margin-bottom: 16px;
-          resize: vertical;
-        }
       }
     }
   }

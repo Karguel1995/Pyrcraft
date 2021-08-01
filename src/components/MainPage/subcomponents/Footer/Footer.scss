@@ -1,0 +1,24 @@
+.footer-container {
+  margin-top: 20px;
+  background-color: #F2DA5E;
+  padding: 10px 0;
+  text-align: center;
+
+  .copyright {
+    padding-top: 20px;
+    font-size: 12px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    &.facebook {
+      color: royalblue;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}

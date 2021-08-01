@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import './MainPage.scss'
 import AboutUs from "./subcomponents/AboutUs/AboutUs";
 import Contact from "./subcomponents/Contact/Contact";
+import Footer from "./subcomponents/Footer/Footer"
 
 
 
@@ -43,6 +44,7 @@ const MainPage = () => {
       </div>
       <AboutUs />
       <Contact />
+      <Footer />
     </main>
   );
 }
