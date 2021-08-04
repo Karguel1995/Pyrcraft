@@ -8,6 +8,16 @@
 
 /***/ }),
 
+/***/ 179:
+/***/ (() => {
+
+var ThanksPage = () => {
+  /*#__PURE__*/
+  React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h3", null, "Dzi\u0119kujemy za wys\u0142anie wiadomo\u015Bci!"), /*#__PURE__*/React.createElement("p", null, "Odpowiemy jak szybko to mo\u017Cliwe."));
+};
+
+/***/ }),
+
 /***/ 679:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -5750,11 +5760,11 @@ var Header_Header = () => {
   }), /*#__PURE__*/react.createElement("div", {
     className: "header-contact"
   }, /*#__PURE__*/react.createElement("i", {
-    class: "fas fa-envelope"
+    className: "fas fa-envelope"
   }), /*#__PURE__*/react.createElement("div", {
     className: "header-contact-info"
   }, "Email:", /*#__PURE__*/react.createElement("p", null, "pyrcrafts@gmail.com")), /*#__PURE__*/react.createElement("i", {
-    class: "fas fa-phone-square-alt"
+    className: "fas fa-phone-square-alt"
   }), /*#__PURE__*/react.createElement("div", {
     className: "header-contact-info"
   }, "Telefon:", /*#__PURE__*/react.createElement("p", null, "+48 600 004 736"))))));
@@ -5994,15 +6004,15 @@ var Contact_Contact = () => {
   }, /*#__PURE__*/react.createElement("div", {
     className: "contact-details"
   }, /*#__PURE__*/react.createElement("h3", null, /*#__PURE__*/react.createElement("i", {
-    class: "fas fa-map-marker-alt"
+    className: "fas fa-map-marker-alt"
   }), " Adres:"), /*#__PURE__*/react.createElement("p", null, "Polska 05-088 Broch\xF3w,"), /*#__PURE__*/react.createElement("p", null, "Woj. Mazowieckie")), /*#__PURE__*/react.createElement("div", {
     className: "contact-details"
   }, /*#__PURE__*/react.createElement("h3", null, /*#__PURE__*/react.createElement("i", {
-    class: "fas fa-phone-alt"
+    className: "fas fa-phone-alt"
   }), " Numer telefonu:"), /*#__PURE__*/react.createElement("p", null, "+48 600 004 736")), /*#__PURE__*/react.createElement("div", {
     className: "contact-details"
   }, /*#__PURE__*/react.createElement("h3", null, /*#__PURE__*/react.createElement("i", {
-    class: "far fa-envelope"
+    className: "far fa-envelope"
   }), " Email:"), /*#__PURE__*/react.createElement("p", null, "pyrcrafts@gmail.com"))), /*#__PURE__*/react.createElement("div", {
     className: "contact-right"
   }, /*#__PURE__*/react.createElement("form", {
@@ -6016,7 +6026,7 @@ var Contact_Contact = () => {
     type: "text",
     id: "name",
     onChange: handleInputChange,
-    placeholder: "Wpisz imie...",
+    placeholder: "Wpisz imie",
     value: name
   }), /*#__PURE__*/react.createElement("label", {
     htmlFor: "email"
@@ -6025,7 +6035,7 @@ var Contact_Contact = () => {
     type: "email",
     id: "email",
     onChange: handleInputChange,
-    placeholder: "Wpisz email...",
+    placeholder: "Wpisz email",
     value: email
   }), /*#__PURE__*/react.createElement("label", {
     htmlFor: "subject"
@@ -6046,12 +6056,14 @@ var Contact_Contact = () => {
   }), /*#__PURE__*/react.createElement("input", {
     name: "_formsubmit_id",
     type: "text",
-    style: "display:none"
+    style: {
+      display: "none"
+    }
   }), /*#__PURE__*/react.createElement("input", {
     name: "_redirect",
     type: "hidden",
     id: "name",
-    value: "https://your website url"
+    value: "https://karguel1995.github.io/Pyrcraft/thanks-page"
   }), /*#__PURE__*/react.createElement("input", {
     className: "submit-button",
     value: "Submit",
@@ -6234,10 +6246,14 @@ var Gallery_Gallery = () => {
 };
 
 /* harmony default export */ const components_Gallery_Gallery = (Gallery_Gallery);
+// EXTERNAL MODULE: ./src/components/ThanksPage/ThanksPage.jsx
+var ThanksPage = __webpack_require__(179);
+var ThanksPage_default = /*#__PURE__*/__webpack_require__.n(ThanksPage);
 ;// CONCATENATED MODULE: ./src/App.scss
 // extracted by mini-css-extract-plugin
 /* harmony default export */ const App = ({});
 ;// CONCATENATED MODULE: ./src/App.jsx
+
 
 
 
@@ -6254,7 +6270,9 @@ var App_App = () => {
     exact: true
   }, /*#__PURE__*/react.createElement(components_MainPage_MainPage, null)), /*#__PURE__*/react.createElement(Route, {
     path: "/gallery"
-  }, /*#__PURE__*/react.createElement(components_Gallery_Gallery, null)))));
+  }, /*#__PURE__*/react.createElement(components_Gallery_Gallery, null)), /*#__PURE__*/react.createElement(Route, {
+    path: "/thanks-page"
+  }, /*#__PURE__*/react.createElement((ThanksPage_default()), null)))));
 };
 
 /* harmony default export */ const src_App = (App_App);
