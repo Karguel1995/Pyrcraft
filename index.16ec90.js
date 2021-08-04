@@ -6005,9 +6005,14 @@ var Contact_Contact = () => {
     class: "far fa-envelope"
   }), " Email:"), /*#__PURE__*/react.createElement("p", null, "pyrcrafts@gmail.com"))), /*#__PURE__*/react.createElement("div", {
     className: "contact-right"
-  }, /*#__PURE__*/react.createElement("form", null, /*#__PURE__*/react.createElement("label", {
+  }, /*#__PURE__*/react.createElement("form", {
+    id: "contactform",
+    action: "https://formsubmit.io/send/pyrcrafts@gmail.com",
+    method: "POST"
+  }, /*#__PURE__*/react.createElement("label", {
     htmlFor: "name"
   }, "Twoje imie:"), /*#__PURE__*/react.createElement("input", {
+    name: "name",
     type: "text",
     id: "name",
     onChange: handleInputChange,
@@ -6016,7 +6021,8 @@ var Contact_Contact = () => {
   }), /*#__PURE__*/react.createElement("label", {
     htmlFor: "email"
   }, "Tw\xF3j email:"), /*#__PURE__*/react.createElement("input", {
-    type: "text",
+    name: "email",
+    type: "email",
     id: "email",
     onChange: handleInputChange,
     placeholder: "Wpisz email...",
@@ -6032,11 +6038,25 @@ var Contact_Contact = () => {
   }), /*#__PURE__*/react.createElement("label", {
     htmlFor: "message"
   }, "Wiadomo\u015B\u0107:"), /*#__PURE__*/react.createElement("textarea", {
+    name: "comment",
     id: "message",
     onChange: handleInputChange,
     placeholder: "Wpisz wiadomo\u015B\u0107",
     value: message
-  }), /*#__PURE__*/react.createElement("button", null, "Wy\u015Blij wiadomo\u015B\u0107")))));
+  }), /*#__PURE__*/react.createElement("input", {
+    name: "_formsubmit_id",
+    type: "text",
+    style: "display:none"
+  }), /*#__PURE__*/react.createElement("input", {
+    name: "_redirect",
+    type: "hidden",
+    id: "name",
+    value: "https://your website url"
+  }), /*#__PURE__*/react.createElement("input", {
+    className: "submit-button",
+    value: "Submit",
+    type: "submit"
+  })))));
 };
 
 /* harmony default export */ const subcomponents_Contact_Contact = (Contact_Contact);
@@ -6048,6 +6068,7 @@ var Contact_Contact = () => {
 
 
 var Footer_Footer = () => {
+  var currentYear = new Date().getFullYear();
   return /*#__PURE__*/react.createElement("div", {
     className: "footer-container"
   }, /*#__PURE__*/react.createElement("a", {
@@ -6057,7 +6078,7 @@ var Footer_Footer = () => {
     class: "fab fa-facebook-square"
   }), " Facebook"), /*#__PURE__*/react.createElement("div", {
     className: "copyright"
-  }, /*#__PURE__*/react.createElement("span", null, "\xA9"), " Copyright 2021. All Rights Reserved | Website Designed by ", /*#__PURE__*/react.createElement("a", {
+  }, /*#__PURE__*/react.createElement("span", null, "\xA9"), " Copyright ", currentYear, ". All Rights Reserved | Website Designed by ", /*#__PURE__*/react.createElement("a", {
     href: "https://github.com/Karguel1995"
   }, /*#__PURE__*/react.createElement("i", {
     class: "fab fa-github"
