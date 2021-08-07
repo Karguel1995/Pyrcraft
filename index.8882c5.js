@@ -7838,12 +7838,12 @@ var Contact_Contact = () => {
     name: "_redirect",
     type: "hidden",
     id: "name",
-    value: "https://karguel1995.github.io/Pyrcraft/thanks-page"
+    value: "https://karguel1995.github.io/Pyrcraft/#/thanks-page"
   }), /*#__PURE__*/react.createElement("button", {
     type: "submit",
     className: "submit-button",
     onSubmit: handleSubmit(handleOnSubmit)
-  }, "Wy\u015Blij ", /*#__PURE__*/react.createElement("i", {
+  }, "Wy\u015Blij wiadomo\u015B\u0107 ", /*#__PURE__*/react.createElement("i", {
     className: "fas fa-paper-plane"
   }))))));
 };
