@@ -8027,8 +8027,7 @@ var Gallery_Gallery = () => {
 
 
 var ThanksPage = () => {
-  /*#__PURE__*/
-  react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("h3", null, "Dzi\u0119kujemy za wys\u0142anie wiadomo\u015Bci!"), /*#__PURE__*/react.createElement("p", null, "Odpowiemy jak szybko to mo\u017Cliwe."));
+  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("h3", null, "Dzi\u0119kujemy za wys\u0142anie wiadomo\u015Bci!"), /*#__PURE__*/react.createElement("p", null, "Odpowiemy jak szybko to mo\u017Cliwe."));
 };
 
 /* harmony default export */ const ThanksPage_ThanksPage = (ThanksPage);
