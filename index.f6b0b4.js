@@ -8,16 +8,6 @@
 
 /***/ }),
 
-/***/ 179:
-/***/ (() => {
-
-var ThanksPage = () => {
-  /*#__PURE__*/
-  React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h3", null, "Dzi\u0119kujemy za wys\u0142anie wiadomo\u015Bci!"), /*#__PURE__*/React.createElement("p", null, "Odpowiemy jak szybko to mo\u017Cliwe."));
-};
-
-/***/ }),
-
 /***/ 679:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -8033,9 +8023,15 @@ var Gallery_Gallery = () => {
 };
 
 /* harmony default export */ const components_Gallery_Gallery = (Gallery_Gallery);
-// EXTERNAL MODULE: ./src/components/ThanksPage/ThanksPage.jsx
-var ThanksPage = __webpack_require__(179);
-var ThanksPage_default = /*#__PURE__*/__webpack_require__.n(ThanksPage);
+;// CONCATENATED MODULE: ./src/components/ThanksPage/ThanksPage.jsx
+
+
+var ThanksPage = () => {
+  /*#__PURE__*/
+  react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("h3", null, "Dzi\u0119kujemy za wys\u0142anie wiadomo\u015Bci!"), /*#__PURE__*/react.createElement("p", null, "Odpowiemy jak szybko to mo\u017Cliwe."));
+};
+
+/* harmony default export */ const ThanksPage_ThanksPage = (ThanksPage);
 ;// CONCATENATED MODULE: ./src/App.scss
 // extracted by mini-css-extract-plugin
 /* harmony default export */ const App = ({});
@@ -8059,7 +8055,7 @@ var App_App = () => {
     path: "/gallery"
   }, /*#__PURE__*/react.createElement(components_Gallery_Gallery, null)), /*#__PURE__*/react.createElement(Route, {
     path: "/thanks-page"
-  }, /*#__PURE__*/react.createElement((ThanksPage_default()), null)))));
+  }, /*#__PURE__*/react.createElement(ThanksPage_ThanksPage, null)))));
 };
 
 /* harmony default export */ const src_App = (App_App);
