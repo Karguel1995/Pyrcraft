@@ -7764,8 +7764,11 @@ var Contact_Contact = () => {
     }
   } = useForm();
 
-  var handleOnSubmit = data => console.log(data);
+  var handleOnSubmit = () => {
+    console.log("Nie działa");
+  };
 
+  console.log(errors.name);
   return /*#__PURE__*/react.createElement("div", {
     id: "contact",
     className: "contact-page"
@@ -7788,7 +7791,6 @@ var Contact_Contact = () => {
   }), " Email:"), /*#__PURE__*/react.createElement("p", null, "pyrcrafts@gmail.com"))), /*#__PURE__*/react.createElement("div", {
     className: "contact-right"
   }, /*#__PURE__*/react.createElement("form", {
-    // onSubmit={handleSubmit(handleOnSubmit)}
     id: "contactform",
     action: "https://formsubmit.io/send/karguel1995@gmail.com",
     method: "POST"
@@ -7841,8 +7843,7 @@ var Contact_Contact = () => {
     value: "https://karguel1995.github.io/Pyrcraft/#/thanks-page"
   }), /*#__PURE__*/react.createElement("button", {
     type: "submit",
-    className: "submit-button",
-    onSubmit: handleSubmit(handleOnSubmit)
+    className: "submit-button"
   }, "Wy\u015Blij wiadomo\u015B\u0107 ", /*#__PURE__*/react.createElement("i", {
     className: "fas fa-paper-plane"
   }))))));
@@ -8023,14 +8024,20 @@ var Gallery_Gallery = () => {
 };
 
 /* harmony default export */ const components_Gallery_Gallery = (Gallery_Gallery);
+;// CONCATENATED MODULE: ./src/components/ThanksPage/ThanksPage.scss
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const ThanksPage = ({"thanks-page":"thanks-page"});
 ;// CONCATENATED MODULE: ./src/components/ThanksPage/ThanksPage.jsx
 
 
-var ThanksPage = () => {
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("h3", null, "Dzi\u0119kujemy za wys\u0142anie wiadomo\u015Bci!"), /*#__PURE__*/react.createElement("p", null, "Odpowiemy jak szybko to mo\u017Cliwe."));
+
+var ThanksPage_ThanksPage = () => {
+  return /*#__PURE__*/react.createElement("div", {
+    className: "thanks-page"
+  }, /*#__PURE__*/react.createElement("h3", null, "Dzi\u0119kujemy za wys\u0142anie wiadomo\u015Bci!"), /*#__PURE__*/react.createElement("p", null, "Odpowiemy jak szybko to mo\u017Cliwe."));
 };
 
-/* harmony default export */ const ThanksPage_ThanksPage = (ThanksPage);
+/* harmony default export */ const components_ThanksPage_ThanksPage = (ThanksPage_ThanksPage);
 ;// CONCATENATED MODULE: ./src/App.scss
 // extracted by mini-css-extract-plugin
 /* harmony default export */ const App = ({});
@@ -8054,7 +8061,7 @@ var App_App = () => {
     path: "/gallery"
   }, /*#__PURE__*/react.createElement(components_Gallery_Gallery, null)), /*#__PURE__*/react.createElement(Route, {
     path: "/thanks-page"
-  }, /*#__PURE__*/react.createElement(ThanksPage_ThanksPage, null)))));
+  }, /*#__PURE__*/react.createElement(components_ThanksPage_ThanksPage, null)))));
 };
 
 /* harmony default export */ const src_App = (App_App);
