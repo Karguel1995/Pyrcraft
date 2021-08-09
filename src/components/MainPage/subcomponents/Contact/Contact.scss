@@ -30,6 +30,32 @@
         display: flex;
         flex-direction: column;
 
+        span.error {
+          color: red;
+          position: relative;
+          transition: .5s;
+
+          .error-message {
+            font-size: 14px;
+            position: absolute;
+            left: 50px;
+            padding: 10px;
+            min-width: 400px;
+            opacity: 0%;
+            display: none;
+            background-color: #F2DA5E;
+            border-radius: 20px 20px 20px 0;
+          }
+
+          &:hover .error-message {
+            padding: 10px;
+            display: block;
+            top: -10px;
+            left: 120px;
+            opacity: 50%;
+          }
+        }
+
         input,
         textarea {
           width: 100%;
@@ -45,6 +71,7 @@
 
         input:focus,
         textarea:focus {
+          padding-left: 16px;
           outline: none;
           border-bottom: 1px solid #000;
         }
@@ -57,6 +84,7 @@
           padding: 12px;
           position: relative;
           overflow: hidden;
+          resize: none;
 
           i {
             color: #fff;
@@ -69,7 +97,8 @@
 
           &:hover i {
             right: 5%;
-            bottom: 10%;
+            bottom: 50%;
+            transform: translateY(50%);
           }
 
           &:hover {
