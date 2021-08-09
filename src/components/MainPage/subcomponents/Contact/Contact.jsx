@@ -1,15 +1,29 @@
 import React, { useState } from "react";
-import { useForm } from "react-hook-form";
 
 
 import './Contact.scss'
 
 const Contact = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
-  const handleOnSubmit = () => {
-    console.log("Nie działa")
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleInputChange = (e) => {
+    if (e.target.id === 'name') {
+      setName(e.target.value)
+    }
+    else if (e.target.id === 'email') {
+      setEmail(e.target.value)
+    }
+    else if (e.target.id === 'subject') {
+      setSubject(e.target.value)
+    }
+    else if (e.target.id === 'message') {
+      setMessage(e.target.value)
+    }
   }
-  console.log(errors.name)
 
   return (
     <div id="contact" className="contact-page">
@@ -40,35 +54,33 @@ const Contact = () => {
             method="POST"
           >
 
-            <label htmlFor="name">
-              {errors.name &&
-                <span className="error">! <span className="error-message">Imię powinno mieć między 3 a 20 znakami.</span>
-                </span>}
-              Imię:</label>
+            <label htmlFor="name">Imię:</label>
             <input
-              {...register("name", { required: true, minLength: 3, maxLength: 20 })}
+              value={name}
+              type="text"
+              id="name"
+              onChange={handleInputChange}
+              required
               placeholder="Wpisz imię"
             />
 
 
-            <label htmlFor="email">
-              {errors.email &&
-                <span className="error">! <span className="error-message">Uzupełnij adres email.</span>
-                </span>}
-              Email:</label>
+            <label htmlFor="email">Email:</label>
             <input
-              {...register("email", { required: true, minLength: 3 })}
+              value={email}
+              id="email"
+              onChange={handleInputChange}
+              required
               type="email"
               placeholder="Wpisz email"
             />
 
-            <label htmlFor="message">
-              {errors.message &&
-                <span className="error">! <span className="error-message">Wiadomość powinna mieć między 20 a 1000 znaków.</span>
-                </span>}
-              Wiadomość:</label>
+            <label htmlFor="message">Wiadomość:</label>
             <textarea
-              {...register("message", { required: true, minLength: 20, maxLength: 1000 })}
+              value={message}
+              id="message"
+              onChange={handleInputChange}
+              required
               placeholder="Wpisz wiadomość"
             />
 
@@ -80,26 +92,6 @@ const Contact = () => {
               className="submit-button"
             >Wyślij wiadomość <i className="fas fa-paper-plane"></i></button>
           </form>
-
-          {/* <form id="contactform" action="https://formsubmit.io/send/karguel1995@gmail.com" method="POST">
-            <label htmlFor="name">Twoje imie:</label>
-            <input name="name" type="text" id="name" onChange={handleInputChange} placeholder="Wpisz imie" value={name} />
-
-            <label htmlFor="email">Twój email:</label>
-            <input name="email" type="email" id="email" onChange={handleInputChange} placeholder="Wpisz email" value={email} />
-
-            <label htmlFor="subject">Temat:</label>
-            <input type="text" id="subject" onChange={handleInputChange} placeholder="Temat wiadomości" value={subject} />
-
-            <label htmlFor="message">Wiadomość:</label>
-            <textarea name="comment" id="message" onChange={handleInputChange} placeholder="Wpisz wiadomość" value={message} />
-
-            <input name="_formsubmit_id" type="text" style={{ display: "none" }} />
-            <input name="_redirect" type="hidden" id="name" value="https://karguel1995.github.io/Pyrcraft/thanks-page" />
-
-            <button className="submit-button" type="submit" onClick={handleSubmitButton} >Wyślij <i className="fas fa-paper-plane"></i></button>
-          </form> */}
-
         </div>
       </div>
     </div >
